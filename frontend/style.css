@@ -1,0 +1,12 @@
+h4{
+    font-size: 50px;
+    color: blueviolet;
+    background-color: brown;
+    text-align: center;
+    text-shadow: 200px solid white;
+}
+h6{
+    font-size: 30px;
+    color: black;
+    background-color: aqua !important;
+}
