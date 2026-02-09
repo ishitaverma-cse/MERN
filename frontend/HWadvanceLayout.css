@@ -1,0 +1,83 @@
+.container {
+    height: 100vh;
+    width: 800px;
+}
+
+.header {
+    background-color: rgb(58, 104, 58);
+    height: 80px;
+}
+
+.row2 {
+    display: flex;
+}
+
+.slider {
+    background-color: white;
+    height: 150px;
+    width: 600px;
+}
+
+.login {
+    background-color: blue;
+    height: 150px;
+    width: 200px;
+}
+
+.left {
+    display: flex;
+}
+
+.news {
+    background-color: rgb(89, 86, 86);
+    height: 100px;
+    width: 500px;
+}
+
+.bottom {
+    display: flex;
+}
+
+.title {
+    background-color: rgb(146, 58, 146);
+    height: 30px;
+    width: 250px;
+}
+
+.view {
+    background-color: rgb(50, 152, 50);
+    height: 30px;
+    width: 250px;
+}
+
+.ad {
+    background-color: rgb(214, 112, 129);
+    height: 70px;
+    width: 300px;
+}
+
+.pics {
+    background-color: rgba(55, 55, 186, 0.459);
+    height: 60px;
+}
+
+.row4 {
+    display: flex;
+}
+
+.offers {
+    background-color: rgb(205, 95, 114);
+    height: 200px;
+    width: 300px;
+}
+
+.details {
+    background-color: rgb(237, 237, 151);
+    height: 200px;
+    width: 500px;
+}
+
+.footer {
+    background-color: rgb(80, 74, 74);
+    height: 70px;
+}

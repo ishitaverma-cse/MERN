@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="pseudo.css">
+</head>
+<body>
+    <h2 class="header">Hello World!</h2>
+
+    <h2>Highest Specificity element</h2>
+    <p class="demo" style="color: red;">Inline style has Highest Specificity!</p>
+    <p class="demo" id="web">After Inline, ID selector has Highest Specificity</p>
+    <ul>
+        <li>CSS</li>
+        <li>JavaScript</li>
+        <li>React</li>
+    </ul>
+
+    <h2>using :hover</h2>
+    <div>Mouse over Me
+        <p>Tada! Here I am!</p>      <!--use :hover to use TOOLTIP-->
+    </div>
+    
+    <h2>using :focus</h2>
+    <form action="" method="post">
+        <label for="">First Name</label> <input type="text" name="firstName"> <br><br>
+        <label for="">Last Name</label> <input type="text" name="lastName">
+        <input type="submit">
+    </form>
+
+    <h2>using ::backdrop</h2>
+    <p>Click on button to open dialog box</p>
+    <button id="dialogBtn">show dialog</button>
+    <dialog>
+        <form action="" method="dialog">
+            <button>Close dialog</button>
+        </form>
+    </dialog>
+    
+</body>
+</html>

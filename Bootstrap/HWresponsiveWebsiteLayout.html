@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap Responsive Layout</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- <style>
+        .Icons {
+            border: white;
+            border-radius: 70%;
+        }
+    </style> -->
+
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid navbar-dark bg-black">
+            <a class="navbar-brand" href="#">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRLmsCQx2i66oOsGXNDyNYGtFJA1OpNs5o71Q&s"
+                    alt="Company logo" width="150" height="60" class="d-inline-block align-text-top ms-5 mt-1">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto gap-4 navbar-nav-scroll">
+                    <li class="nav-item dropdown ms-1">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Homes
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Home 1</a></li>
+                            <li><a class="dropdown-item" href="#">Home 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            About
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">About 1</a></li>
+                            <li><a class="dropdown-item" href="#">About 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            News
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">News 1</a></li>
+                            <li><a class="dropdown-item" href="#">News 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Components
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Component 1</a></li>
+                            <li><a class="dropdown-item" href="#">Component 2</a></li>
+                        </ul>
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            Docs
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">File 1</a></li>
+                            <li><a class="dropdown-item" href="#">File 2</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <a href="#" class="text-white border border-white border-3 rounded-pill px-4 py-2 text-decoration-none fw-medium ms-4 me-5">
+                    Purchase
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card-group justify-content-center py-5">
+        <div class="card border-white me-3 mt-1" style="max-width: 500px">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR2QIJzHuRwqsQ-kzuADBbM1dAE4Y7yH2b7CAkh90GWh-ZQdGWP"
+                class="card-img-top" alt="Bridge" height="250">
+            <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-info fs-5">ABOUT</h5>
+                <p class="card-text">Find out about our organization, mission, our methods, and the results of our
+                    decades of advocacy.
+                </p>
+                <a href="#" class="btn-primary d-flex justify-content-center text-decoration-none">Learn More -></a>
+            </div>
+        </div>
+
+        <div class="card border-white ms-3 mt-1" style="max-width: 500px;">
+            <img src="https://live.staticflickr.com/3710/9493474257_c354e18b10_b.jpg" class="card-img-top"
+                alt="Landscape" height="250">
+            <div class="card-body">
+                <h5 class="card-title d-flex justify-content-center text-info fs-5">PORTFOLIO</h5>
+                <p class="card-text">Discover our curated portfolio of successful projects, showcasing years of
+                    expertise and collaboration.</p>
+                <a href="#" class="btn-primary d-flex justify-content-center text-decoration-none">See Portfolio -></a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom bg-body-tertiary" data-bs-theme="dark">
+        <div class="container d-flex justify-content-center py-2">
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-twitter bg-white text-dark rounded-circle"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-instagram bg-white text-dark rounded-circle"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-pinterest bg-white text-dark rounded-circle"></i>
+            </a>
+            <a class="navbar-brand" href="#">
+                <i class="fa-brands fa-youtube bg-white text-dark rounded-circle"></i>
+            </a>
+        </div>
+    </nav>
+
+
+
+
+    <script src="/Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

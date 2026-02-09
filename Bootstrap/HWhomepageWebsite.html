@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Homepage of Website</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .card1 {
+            transition: all 0.3s ease;
+        }
+
+        .card1:hover {
+            transform: translateY(-10px) scale(1.03);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <div class="container-fluid bg-black"> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+        <div class="container-fluid pb-1 bg-black">
+            <div class="d-flex align-items-center fw-bold">
+                <div class="navbar-brand fs-4 text-danger">CineVue</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto">
+                    <li>
+                        <a class="nav-link text-white" href="#" role="button" aria-expanded="false">
+                            Home
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-secondary" href="#" role="button" aria-expanded="false">
+                            About
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-secondary" href="#" role="button" aria-expanded="false">
+                            Categories
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-secondary" href="#" role="button" aria-expanded="false">
+                            Contact
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav-link text-secondary" href="#" role="button" aria-expanded="false">
+                            Login
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExample" class="carousel slide">
+        <div class="carousel-inner bag">
+            <div class="carousel-item active">
+                <img src="https://wallpapers.com/images/featured/marvel-movie-km5otxtmsqb0ijdb.jpg"
+                    class="d-block w-100" style="height: 600px;" alt="Marvel">
+            </div>
+            <div class="carousel-item">
+                <img src="https://comicbookmovie.com/images/articles/banners/the-last-of-us-season-2-character-posters-pay-homage-to-the-last-of-us-part-ii-video-game-cover-ab217236.jpg"
+                    class="d-block w-100" style="height: 600px;" alt="TLOU TVseries">
+            </div>
+            <div class="carousel-item">
+                <img src="https://wallpapers.com/images/featured/eternals-6qggyrv4n3sv5r3n.jpg" class="d-block w-100"
+                    style="height: 600px;" alt="eternals">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <section>
+        <div class="text-danger text-center p-5 bg-black">
+            <h1 class="fw-bold pt-5">
+                About the Platform 🍿
+            </h1>
+            <p class="text-white mb-3 p-3">
+                **CineVue** is your curated destination for the best cinema experience. We cut through the noise,
+                <br>
+                offering a **minimal, ad-free interface** that lets the movies speak for themselves. Our platform
+                features <br>
+                **hand-picked monthly selections**, exclusive retrospectives, and an easy-to-navigate library.
+            </p>
+            <p class="small text-white pb-5">
+                **Features include:** High-Definition streaming (if this were real), personalized
+                recommendations (simulated), and a focus <br>
+                on independent and critically acclaimed films.
+            </p>
+            <!-- <hr class="text-white"> -->
+        </div>
+
+        <div class="text-white text-center bg-black pb-4">
+            <h1 class="fw-bold p-5">Best Movies of the Month ✨</h1>
+            <div class="row row-cols-1 row-cols-md-3 g-4 mx-5">
+                <div class="col">
+                    <div class="card card1 h-100 bg-dark text-white">
+                        <img src="https://preview.redd.it/jwk3tlfo5i721.jpg?auto=webp&s=e22cb619ff2b515d6b1f72dedb4c41052d9108cd"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title text-warning">The Looming Tower</h5>
+                            <p class="card-text">A psychological thriller about an architect haunted by his latest
+                                creation. **Rating: 9.1/10**
+                            </p>
+                            <p>
+                                <span class="badge text-bg-danger">Thriller</span>
+                                <span class="badge text-bg-secondary">2024</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card1 h-100 bg-dark text-white">
+                        <img src="https://preview.redd.it/oi8ritloxrw81.jpg?vthumb=1&s=23c376b82a58e3ca5170d4c68fb8f80a44ea4180"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title text-warning">Green Horizon</h5>
+                            <p class="card-text">An inspiring documentary on sustainable living and global change.
+                                **Rating: 8.5/10**
+                            </p>
+                            <p>
+                                <span class="badge text-bg-success">Documentary</span>
+                                <span class="badge text-bg-secondary">2023</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card card1 h-100 bg-dark text-white">
+                        <img src="https://cdn.neowin.com/news/images/uploaded/2025/04/1743979718_mc_wallpaper_movie_vista_1920x1080.jpg"
+                            class="card-img-top" alt="...">
+                        <div class="card-body text-start">
+                            <h5 class="card-title text-warning">City of Shadows</h5>
+                            <p class="card-text">A neo-noir detective story set in a perpetually rainy metropolotan
+                                area. **Rating: 9.3/10**
+                            </p>
+                            <p>
+                                <span class="badge text-bg-primary">Noir</span>
+                                <span class="badge text-bg-secondary">2024</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- <hr class="p-4 m-5" style="width: 1500px;"> -->
+            </div>
+        </div>
+
+
+        <div class="text-white text-center bg-black">
+            <h1 class="fw-bold pt-5">What Our Users Say 💬</h1>
+
+            <div class="container my-5">
+                <div class="d-flex justify-content-center gap-4 flex-wrap">
+
+                    <div class="card bg-dark fs-5" style="width: 600px;">
+                        <div class="card-body fs-4">
+                            <figure>
+                                <blockquote class="blockquote text-white text-start mt-2">
+                                    <p>"Finally, a movie platform that values quality over quantity. The minimal
+                                        design
+                                        is a breath of fresh air. I cancelled my other subscriptions!"
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer d-flex justify-content-start">
+                                    Alex J. A <cite title="Source Title">CineVue Subscriber</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                    <div class="card bg-dark fs-5" style="width: 600px;">
+                        <div class="card-body fs-4 d-flex">
+                            <figure>
+                                <blockquote class="blockquote text-white text-start mt-2">
+                                    <p>"The 'Best of the Month' picks are consistently amazing. It's like
+                                        having a personal film critic guide my viewing. Highly recommended."
+                                    </p>
+                                </blockquote>
+                                <figcaption class="blockquote-footer d-flex justify-content-start">
+                                    Sarah K. <cite title="Source Title">Movie Enthusiast</cite>
+                                </figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <hr style="margin: 100px;">
+            </div>
+
+            <div class="card bg-black">
+                <div class="card-body mb-5 fs-4">
+                    <figure>
+                        <blockquote class="blockquote text-warning fs-3"
+                            style="font-family: Verdana, Geneva, Tahoma, sans-serif ;">
+                            <p>"Movies are memories in the making. They teach us, inspire us, <br>
+                                and remind us what it means to be human."
+                            </p>
+                        </blockquote>
+                        <figcaption class="blockquote-footer p-3">
+                            <cite title="Source Title"> The CineVue Team</cite>
+                        </figcaption>
+                    </figure>
+                </div>
+                <hr>
+            </div>
+        </div>
+    </section>
+
+
+    <nav class="navbar bg-body-tertiary p-0" data-bs-theme="dark">
+        <div class="container-fluid justify-content-center bg-black py-3">
+            <div class="text-secondary">
+                &copy; 2025 CineVue Movie Platform. All rights reserved.
+                <div class="d-flex justify-content-center">
+                    <a class="nav-link-active text-secondary ms-4 p-2" href="#">
+                        Facebook
+                    </a>
+                    <a class="nav-link-active text-secondary p-2" href="#">
+                        Twitter
+                    </a>
+                    <a class="nav-link-active text-secondary p-2" href="#">
+                        Instagram
+                    </a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <script src="/Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+
+</html>

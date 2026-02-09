@@ -1,0 +1,35 @@
+* {
+  margin: 0%;
+  padding: 0%;
+}
+
+.container {
+  background-color: aquamarine;
+  width: 100%;
+  height: 50vh;
+  margin-top: 100px;
+}
+
+.box {
+  background-color: blue;
+  width: 100%;
+  height: 25vh;
+  border: 3px solid black;
+  position: relative;
+
+  /* animation-name: myAnimation;
+    animation-duration: 3s;
+    animation-iteration-count: 1; */
+  animation: myAnimation 3s 1;
+}
+
+@keyframes myAnimation {
+  from {
+    top: 0px;
+    left: 0px;
+  }
+  to {
+    top: 500px;
+    left: 500px;
+  }
+}

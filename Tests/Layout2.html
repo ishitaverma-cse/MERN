@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .Header {
+            background-color: greenyellow;
+            border: 2px solid black;
+            width: 800px;
+            margin: 10px;
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+        .box1 {
+            display: flex;
+        }
+        .SideBar {
+            background-color: greenyellow;
+            border: 2px solid black;
+            width: 80px;
+            height: 350px;
+            margin: 10px ;
+            padding: 50px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Content1 {
+            width: 650px;
+            height: 200px;
+            border: 2px solid black;
+            background-color: greenyellow;
+            padding-right: 10px;
+            padding-left: 0px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .box {
+            padding: 10px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        .main {
+            display: flex;
+        }
+        .Content2 {
+            background-color: greenyellow;
+            border: 2px solid black;
+            margin: 20px 10px 20px 1px;
+            padding-left: 10px;
+            width: 300px;
+            height: 225px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .Content3 {
+            background-color: greenyellow;
+            border: 2px solid black;
+            margin: 20px;
+            padding-left: 35px;
+            width: 280px;
+            height: 225px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .footer {
+            background-color: greenyellow;
+            border: 2px solid black;
+            width: 800px;
+            margin: 10px;
+            margin-top: 0px;
+            padding: 30px;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+        }
+
+
+
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Header">
+            <h1>Header</h1>
+        </div>
+
+        <div class="box1">
+            <div class="SideBar">
+                <h1>Side Bar</h1>
+            </div>
+
+            <div class="box">
+                <div class="Content1">
+                    <h1>Content 1</h1>
+                </div>
+
+                <div class="main">
+                    <div class="Content2">
+                        <h1>Content 2</h1>
+                    </div>
+
+                    <div class="Content3">
+                        <h1>Content 3</h1>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <h1>Footer</h1>
+        </div>
+    </div>
+</body>
+</html>

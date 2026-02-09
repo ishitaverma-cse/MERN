@@ -1,0 +1,56 @@
+.header {
+    color: aqua;
+    background-color: yellowgreen;
+    /* background: blue; */
+}
+.demo {
+    color: black;
+}
+
+#web:hover {
+    color: gold;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+
+
+li:hover {
+    color: blueviolet;
+    font-size: 30px;
+}
+li:first-child {
+    color: teal;
+}
+li:last-child {
+    color: blue;
+}
+li:nth-child(even) {
+    color: brown;
+}
+
+div {
+    text-align: center;
+    background-color: gray;
+    padding: 50px;
+    margin: 20px;
+    color: white;
+}
+
+div:hover {
+    background-color: blue;
+}
+
+/* p {
+    background-color: yellow;
+    text-align: center;
+    display: none;
+    padding: 30px;
+} */
+div:hover p {
+    display: block;
+}
+
+input:focus {
+    color: black;
+    background-color: grey;
+}

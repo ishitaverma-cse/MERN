@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap LinkedIn Website</title>
+    <link rel="stylesheet" href="/Bootstrap/bootstrap-5.3.8-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .mainSection {
+            background-image: url(https://i.pinimg.com/736x/8f/1a/f4/8f1af4de2dcc0e4f17325473032b3e4f.jpg);
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+        }
+    </style>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" data-bs-theme="dark">
+        <div class="container pb-3 b-2">
+            <div class="d-flex align-items-center fw-bold">
+                <div class="Linkedin-text fs-3 text-white">Linked</div>
+                <div class="Linkedin-in rounded-1 fs-4 text-white bg-primary px-1 ms-1">in</div>
+            </div>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                    <li class="nav-item ms-2">
+                        <a class="nav-link text-white" href="#" role="button" aria-expanded="false">
+                            sign in
+                        </a>
+                    </li>
+                </ul>
+                <a href="#"
+                    class="text-white border border-primary border-2 rounded-1 px-2 py-1 text-decoration-none ms-1 me-5">
+                    Join now
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <div class="card-group mainSection justify-content-center p-5">
+        <div class="card rounded-1 opacity-75 my-3" style="max-width: 500px">
+            <div class="d-flex justify-content-center">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/01/LinkedIn_Logo.svg/2560px-LinkedIn_Logo.svg.png"
+                    class="card-img-top p-2 my-3" alt="logo" style="width: 250px;">
+            </div>
+            <form>
+                <div class="py-2 mx-3">
+                    <input type="email" class="form-control" id="exampleInputEmail1"
+                        placeholder="Email address or Phone number" aria-describedby="emailHelp">
+                </div>
+                <div class="py-2 mx-3">
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                </div>
+                <div class="py-3 mx-3">
+                    <button type="sign in" class="btn btn-primary w-100">Sign in</button>
+                </div>
+            </form>
+
+            <div class="card-body text-center">
+                <a href="#" class="card-link text-decoration-none">
+                    Forgot password?
+                </a>
+                <p class="text-dark py-4">
+                    Not a member?
+                    <a href="#" class="card-link text-decoration-none">
+                        Join now
+                    </a>
+                </p>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar fixed-bottom bg-body-tertiary" data-bs-theme="dark">
+        <div class="container d-flex justify-content-evenly py-2">
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                Linked<i class="fa-brands fa-linkedin"></i>&copy;2018
+            </a>
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                user Agreement
+            </a>
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                privacy policy
+            </a>
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                community guidelines
+            </a>
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                cookie policy
+            </a>
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                copyright policy
+            </a>
+            <a class="navbar-brand fw-semibold fs-6" href="#">
+                unsubscribe
+            </a>
+        </div>
+    </nav>
+
+
+
+    <script src="/Bootstrap/bootstrap-5.3.8-dist/js/bootstrap.min.js"></script>
+</body>
+</html>

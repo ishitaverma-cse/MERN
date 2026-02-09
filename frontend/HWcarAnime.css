@@ -1,0 +1,63 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+.container {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://cdn.pixabay.com/photo/2022/03/24/08/26/gas-station-7088580_960_720.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.car1 {
+  transform: translateY(75vh);
+}
+.car1 img {
+  width: 100px;
+  height: 60px;
+  animation: myAnimation 4s 2;
+  position: relative;
+}
+
+.car2 {
+  transform: translateY(80vh);
+}
+.car2 img {
+  width: 100px;
+  height: 60px;
+  animation: myAnimation 3s 2;
+  position: relative;
+}
+
+@keyframes myAnimation {
+  from {
+    top: 0;
+    left: 0;
+  }
+  to {
+    top: 0;
+    left: 1500px;
+  }
+}
+
+/* .car3 {
+  transform: translate(100vh, 65vh);
+}
+.car3 img {
+  width: 100px;
+  height: 50px;
+  animation: myAnimation2 3s 2;
+  position: relative;
+} */
+/* @keyframes myAnimation2 {
+    from {
+        top: 0;
+        left: 500px;
+    }
+    to {
+        top: 0;
+        left: 0;
+    }
+} */

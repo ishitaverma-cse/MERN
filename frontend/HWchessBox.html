@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+        integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            width: 100%;
+            height: 100vh;
+            background-color: palegreen;
+        }
+
+        .row {
+            width: 100%;
+            height: 12.5vh;
+            background-color: burlywood;
+            display: flex;
+        }
+
+        .white {
+            width: 12.5%;
+            height: 12.5vh;
+            background-color: white;
+        }
+
+        .black {
+            width: 12.5%;
+            height: 12.5vh;
+            background-color: black;
+        }
+
+        .chess-piece {
+            font-size: 50px;
+        }
+
+        .square {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+
+        <!-- 1st Row -->
+        <div class="row">
+            <div class="white square">
+                <i class="fa-solid fa-chess-rook chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-knight chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-bishop chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-queen chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-king chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-bishop chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-knight chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-rook chess-piece" style="color: white;"></i>
+            </div>
+        </div>
+
+        <!-- 2nd Row -->
+        <div class="row">
+
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+        </div>
+
+
+        <!-- 3rd Row -->
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+
+        <!-- 4th Row -->
+        <div class="row">
+
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+
+        <!-- 1st Row -->
+        <div class="row">
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+        </div>
+
+        <!-- 2nd Row -->
+        <div class="row">
+
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+            <div class="black"></div>
+            <div class="white"></div>
+        </div>
+
+
+        <!-- 3rd Row -->
+        <div class="row">
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-pawn chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-regular fa-chess-pawn chess-piece" style="color: white;"></i>
+            </div>
+        </div>
+
+        <!-- 4th Row -->
+        <div class="row">
+
+            <div class="black square">
+                <i class="fa-solid fa-chess-rook chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-knight chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-bishop chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-queen chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-king chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-bishop chess-piece"></i>
+            </div>
+            <div class="black square">
+                <i class="fa-solid fa-chess-knight chess-piece" style="color: white;"></i>
+            </div>
+            <div class="white square">
+                <i class="fa-solid fa-chess-rook chess-piece"></i>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
