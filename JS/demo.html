@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>My First JavaScript code</h1>
+
+    <input type="number" id="numberInput" placeholder="Enter a Number" style="padding: 5px;">
+    <button type="button" onclick="checkNumber()" style="margin: 10px;">check</button>
+    <p id="result"></p>
+
+
+    <script>
+        function checkNumber() {
+           let num = document.getElementById("numberInput").value       //get value for input box.
+           num = Number(num)          //converts string to number - as input is a default string.
+
+           let resultText = document.getElementById("result")
+           if(num > 0){
+            resultText.innerHTML = "This is a Positive number"
+           }
+           else if(num < 0){
+            resultText.innerHTML = "This is a Negative number"
+           }
+           else {
+            resultText.innerHTML = "The number is zero"
+           }
+        }
+    </script>
+</body>
+
+</html>

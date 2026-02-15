@@ -6,12 +6,66 @@
     <title>Function Tasks</title>
 </head>
 <body>
-    let num = 
 
+    <input type="number" id="InputValue" placeholder="enter a number" style="padding: 5px;">
+    <button type="button" onclick="checkEvenOdd()" style="margin: 10px;">check</button>
+    <p id="result"></p>
 
+    <input type="text" id="inputText" placeholder="enter a text" style="padding: 5px;">
+    <button type="button" onclick="checkType()" style="margin: 10px;">click</button>
+    <p id="result"></p>
 
 
     <script>
+        //Check whether number is positive or negative
+        function checkNumber(num) {
+        
+            if(num > 0) {
+                console.log("The number is Positive.")
+            } else if(num < 0) {
+                console.log("The number is Negative.")
+            }else {
+                console.log("The number is Zero.")
+            }
+        }
+        checkNumber(20)
+        checkNumber(-5)
+        checkNumber(-100)
+        checkNumber(0)
+
+
+
+
+        //Check whether number is Odd or Even
+        function checkEvenOdd() {
+            let num = document.getElementById("InputValue").value
+            num =  Number(num)
+
+            if(num % 2 == 0){
+                document.getElementById("result").innerHTML = "The number is Even."
+            }
+            else {
+                document.getElementById("result").innerHTML = "The number is Odd."
+            }
+        }
+
+
+        
+
+        //check whether an entered text is a string or number
+        function checkType() {
+            let text = document.getElementById("inputText").value
+
+            if(text === ""){
+                document.getElementById("result").innerHTML = "Enter something."
+            }
+            else if(!isNaN(text)){
+                document.getElementById("result").innerHTML = "It is a number."
+            }
+            else {
+                document.getElementById("result").innerHTML = "It is a text."
+            }
+        }
 
     </script>
 </body>
