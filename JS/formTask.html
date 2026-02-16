@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <style>
+        .container {
+            background-color: black;
+            width: 800px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+        }
+
+        .header {
+            color: white;
+        }
+
+        .name {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container p-4">
+        <h1 class="header text-center">Registration Info</h1>
+        <form>
+            <div class="mb-3">
+                <label for="userName" class="name form-label fs-3">User Name</label>
+                <input oninput="submitInput()" id="userName" type="text" class="form-control" style="width: 500px;"
+                    aria-describedby="inputName">
+                <p id="myHeading1"></p>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputEmail1" class="name form-label fs-3">Email address</label>
+                <input oninput="submitInput()" id="userEmail" type="email" class="form-control" style="width: 500px;"
+                    aria-describedby="emailHelp">
+                <p id="myHeading2"></p>
+            </div>
+            <div class="mb-3">
+                <label for="exampleInputPassword1" class="name form-label fs-3">Password</label>
+                <input oninput="submitInput()" id="userPassword" type="password" class="form-control"
+                    style="width: 500px;">
+                <p id="myHeading3"></p>
+            </div>
+            <div class="mb-3">
+                <label for="userCourse" class="name form-label fs-3">Course</label>
+                <input oninput="submitInput()" id="userCourse" type="text" class="form-control" style="width: 500px;"
+                    aria-describedby="inputName">
+                <p id="myHeading4"></p>
+            </div>
+            <div class="mb-3">
+                <label for="CollegeName" class="name form-label fs-3">College/University</label>
+                <input oninput="submitInput()" id="collegeName" type="text" class="form-control" style="width: 500px;"
+                    aria-describedby="inputName">
+                <p id="myHeading5"></p>
+            </div>
+            <button onclick="submitForm()" type="button" class="btn btn-primary mt-3">Submit</button>
+        </form>
+    </div>
+
+
+
+    <script src="formTask.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
