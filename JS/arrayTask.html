@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let courses = ["JS", "HTML", "CSS", "React"]
+        console.log(courses)
+
+        // Add Node at the end
+        courses.push("Node")
+        console.log(courses) 
+
+        // Remove first element 
+        courses.shift()
+        console.log(courses)
+
+        // Get only HTML and CSS
+        console.log(courses.slice(0,2))
+
+        // Replace CSS with Tailwind
+        courses.splice(1, 1, "Tailwind")
+        console.log(courses)
+
+        // Check if React exists
+        console.log(courses.includes("React"))
+
+        
+        
+        
+        //TASK 2 - Access last second array
+        let colors = ["Red", "Blue", "Skyblue", "Yellow"]
+        console.log(colors)
+
+        console.log(colors[2])                  //1. using index
+        console.log(colors[colors.length-2])   //2. using method - Length 
+
+    </script>
+</body>
+</html>

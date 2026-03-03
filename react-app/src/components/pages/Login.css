@@ -1,0 +1,55 @@
+/* * {
+  margin: 0;
+  padding: 0;
+}
+
+.img-div {
+  height: 695px;
+  background-image: url(https://img.freepik.com/premium-photo/abstract-background-purple-color-with-spotlight-product-minimal-concept-3d-rendering_85046-46.jpg?semt=ais_hybrid&w=740&q=80);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.header {
+  font-weight: bold;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top: 50px;
+  padding-left: 30px;
+}
+
+.para {
+  padding-left: 50px;
+}
+
+.btn {
+  width: 350px;
+  border-radius: 30px;
+  padding: 10px;
+  margin: 25px;
+  margin-bottom: 50px;
+}
+
+.divider {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 350px;
+  margin-left: 50px;
+  padding-top: 10px;
+}
+
+.divider::before,
+.divider::after {
+  content: "";
+  flex: 1;
+  border-bottom: 1px solid #e6dede;
+}
+
+.input {
+  width: 350px;
+  border-radius: 5px;
+  padding: 10px;
+} */

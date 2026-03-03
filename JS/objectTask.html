@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            name: "Jim",
+            age: 22,
+            city: "Delhi"          
+        }
+        console.log(user)
+
+        //Access age
+        console.log(user.age)
+
+        //Update city -> Mumbai
+        user.city = "Mumbai"
+        console.log(user.city)
+        console.log(user)
+
+        //Add Email key
+        user.email = "ishitaverma1318@gmail.com"
+        console.log(user)
+
+        //Delete Age
+        delete user.age
+        console.log(user)
+
+        //Get all Keys
+        let keys = object.keys(user)
+        console.log(keys)
+
+    </script>
+</body>
+</html>

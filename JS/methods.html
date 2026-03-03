@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Methods</title>
+</head>
+<body>
+
+    <script>
+
+        //------------------Math Methods----------------
+        
+        //Random - generate Random decimal numbers
+        let random = Math.random()
+        console.log(Math.round(random * 1000))
+
+        //floor - down 
+        let floor = Math.floor(9.9)
+        console.log(floor)
+
+        //ceil - up
+        let ceil = Math.ceil(2.5)
+        console.log(ceil)
+        
+        //round
+        let round = Math.round(7.5)
+        console.log(round)
+
+
+        //----------------Array Methods-------------------
+        
+        //find - way 1
+        let num = [1, 2, 3, 4, 5]
+        let result = num.find((n)=>{
+            return n == 10
+        })
+        console.log(result)
+
+        //find - way 2
+        let number = [1, 2, 3, 4, 5, "Ishita", 4].find((n)=> n == 3)
+        console.log(number)
+    </script>
+
+</body>
+</html>

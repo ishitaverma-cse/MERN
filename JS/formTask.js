@@ -16,7 +16,7 @@ function submitForm() {
         document.getElementById("myHeading2").innerHTML = "Email pass!!"
     }
     else {
-        document.getElementById("myHeading2").style.color = "red"
+        document.getElementById("myHeading2").style.color = "blue"
         document.getElementById("myHeading2").innerHTML = "Please write email according to pattern."
     }
     

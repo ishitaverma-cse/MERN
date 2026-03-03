@@ -42,7 +42,7 @@ function changeInput3() {
 }
 
 function changeInput4() {
-    let input4Value = document.getElementById("box4").value
+    let input4Value = document.getElementById("box4").value 
 
     if (input4Value == 0) {
         console.log("Value Matched")
@@ -51,5 +51,7 @@ function changeInput4() {
         document.getElementById("bomb4").src = "https://png.pngtree.com/png-vector/20241228/ourmid/pngtree-dynamic-comic-style-explosion-with-vibrant-colors-and-bold-text-png-image_14923635.png"
     }
 }
+
+
 
 
