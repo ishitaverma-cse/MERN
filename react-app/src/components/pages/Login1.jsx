@@ -1,22 +1,43 @@
 import { useState } from "react"
+import { useNavigate } from "react-router-dom"
+import { PacmanLoader } from "react-spinners"
+import { toast, ToastContainer } from "react-toastify"
 
 export default function Login1() {
 
-     {/* Hooks - useState, useEffect */ }
+    {/* Hooks - useState, useEffect */ }
     const [email, setEmail] = useState("")
-    const[password, setPassword] = useState("")
+    const [password, setPassword] = useState("")
+    const [loader, setLoader] = useState(false)
+
+    const nav = useNavigate()
 
     function handleLoginForm(e) {
-        
         e.preventDefault()
 
-        console.log(email)
-        console.log(password)
+        setLoader(true)
+
+        if (email == "" || password == "") {
+            toast.error("All Fields are required.")
+        }
+        else if (email == "admin@gmail.com" && password == "123") {
+            toast.success("Login Successfull!!")
+        }
+        else {
+            toast.warning("Invalid Credentials.")
+
+        }
+            setTimeout(() => {
+                nav("/admin")
+                setLoader(false)
+            }, 2000)
     }
 
     return (
         <>
             {/* Header Start */}
+            <ToastContainer></ToastContainer>
+
             <div className="container-fluid bg-primary py-5 mb-5 page-header">
                 <div className="container py-5">
                     <div className="row justify-content-center">
@@ -47,7 +68,15 @@ export default function Login1() {
                 </div>
             </div>
             {/* Header End */}
-            {/* Contact Start */}
+
+            {/* Login Start */}
+            <PacmanLoader
+                color="rgba(38, 115, 192, 1)"
+                loading={loader}
+                size={50}
+                speedMultiplier={2}
+                
+            />
             <div className="container-xxl py-5">
                 <div className="container">
                     <div className="text-center wow fadeInUp" data-wow-delay="0.1s">
@@ -56,9 +85,7 @@ export default function Login1() {
                         </h6>
                         <h1 className="mb-5">Login with your credentials</h1>
                     </div>
-                    <div className="row g-4">
-                        <div className="col-lg-4 col-md-6 wow fadeInUp" data-wow-delay="0.1s"></div>
-
+                    <div className="row g-4 justify-content-center">
                         <div className="col-lg-4 col-md-12 wow fadeInUp" data-wow-delay="0.5s">
                             <form onSubmit={handleLoginForm}>
                                 <div className="row g-3">
@@ -72,7 +99,7 @@ export default function Login1() {
 
                                                 value={email}
 
-                                                onInput={(e)=>{
+                                                onInput={(e) => {
                                                     setEmail(e.target.value)
                                                 }}
                                             />
@@ -89,14 +116,14 @@ export default function Login1() {
 
                                                 value={password}
 
-                                                onInput={(e)=>{
+                                                onInput={(e) => {
                                                     setPassword(e.target.value)
                                                 }}
                                             />
                                             <label htmlFor="subject">Password</label>
                                         </div>
                                     </div>
-                                    
+
                                     <div className="col-12">
                                         <button className="btn btn-primary w-100 py-3" type="submit">
                                             Login
@@ -108,7 +135,7 @@ export default function Login1() {
                     </div>
                 </div>
             </div>
-            {/* Contact End */}
+            {/* Login End */}
 
 
         </>

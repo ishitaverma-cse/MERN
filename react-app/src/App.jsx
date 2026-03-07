@@ -1,4 +1,4 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import './App.css'
 import { BrowserRouter, Route, Router, Routes } from 'react-router-dom'
 import Website from './components/pages/Website'
@@ -15,12 +15,28 @@ import Testimonial from './components/pages/Testimonial'
 import Demo from './components/pages/Demo'
 import Login1 from './components/pages/Login1'
 import MasterLayout from './components/layout/MasterLayout'
+import AdminMasterLayout from './components/layout/adminLayout/AdminMasterLayout'
+import AddCategory from './components/pages/admin/AddCategory'
+import { AllCategory } from './components/pages/admin/AllCategory'
 
 function App() {
   return (
     <>
       <BrowserRouter>
         <Routes>
+
+          {/* Admin Panel */}
+          <Route path="/admin" element={<AdminMasterLayout></AdminMasterLayout>}> 
+
+          <Route path="/admin/addCategory" element={<AddCategory></AddCategory>}></Route>
+          <Route path="/admin/allCategory" element={<AllCategory></AllCategory>}></Route>
+
+          </Route>
+
+
+
+
+          {/* User Panel */}
           <Route path="/" element={<MasterLayout></MasterLayout>}>
 
             <Route path="/website" element={<Website></Website>}></Route>
@@ -36,7 +52,6 @@ function App() {
             <Route path="/testimonial" element={<Testimonial></Testimonial>}></Route>
             <Route path="/demo" element={<Demo></Demo>}></Route>
             <Route path="/login1" element={<Login1></Login1>}></Route>
-
 
           </Route>
         </Routes>
