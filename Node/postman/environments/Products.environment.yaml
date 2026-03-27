@@ -1,0 +1,5 @@
+name: Products
+values:
+  - key: baseurl
+    value: ''
+    enabled: true

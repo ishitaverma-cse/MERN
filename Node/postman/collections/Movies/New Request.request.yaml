@@ -1,0 +1,11 @@
+$kind: http-request
+name: New Request
+url: "{{baseurl}}/movie/add"
+method: POST
+body:
+  type: urlencoded
+  content:
+    title: The Dark Knight
+    genre: Action
+    year: "2008"
+order: 1773639381969

@@ -17,7 +17,8 @@ import Login1 from './components/pages/Login1'
 import MasterLayout from './components/layout/MasterLayout'
 import AdminMasterLayout from './components/layout/adminLayout/AdminMasterLayout'
 import AddCategory from './components/pages/admin/AddCategory'
-import { AllCategory } from './components/pages/admin/AllCategory'
+import AllCategory from './components/pages/admin/AllCategory'
+import Dashboard from './components/pages/admin/Dashboard'
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
 
           <Route path="/admin/addCategory" element={<AddCategory></AddCategory>}></Route>
           <Route path="/admin/allCategory" element={<AllCategory></AllCategory>}></Route>
+          <Route path="/admin/Dashboard" element={<Dashboard></Dashboard>}></Route>
 
           </Route>
 

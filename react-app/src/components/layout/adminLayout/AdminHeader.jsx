@@ -24,7 +24,7 @@ export default function AdminHeader() {
                 </button>
                 <div className="collapse navbar-collapse" id="navbarCollapse">
                     <div className="navbar-nav ms-auto p-4 p-lg-0">
-                        <Link to={"/home"} className="nav-item nav-link active">
+                        <Link to={"/admin/dashboard"} className="nav-item nav-link active">
                             Dashboard
                         </Link>
                         <div className="nav-item dropdown">

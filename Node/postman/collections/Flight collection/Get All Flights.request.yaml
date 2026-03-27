@@ -1,0 +1,7 @@
+$kind: http-request
+name: Get All Flights
+url: ?=
+method: GET
+queryParams:
+  "": ""
+order: 1773207687749
